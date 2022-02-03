@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilsValidations.Src", "UtilsValidations.Src\UtilsValidations.Src.csproj", "{08C6817A-F278-4D8B-AB83-CE35468C7D6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilsValidation.Tests", "UtilsValidation.Tests\UtilsValidation.Tests.csproj", "{71085C1C-AA5E-4CBA-946A-51D6774739CE}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08C6817A-F278-4D8B-AB83-CE35468C7D6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08C6817A-F278-4D8B-AB83-CE35468C7D6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08C6817A-F278-4D8B-AB83-CE35468C7D6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08C6817A-F278-4D8B-AB83-CE35468C7D6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71085C1C-AA5E-4CBA-946A-51D6774739CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71085C1C-AA5E-4CBA-946A-51D6774739CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71085C1C-AA5E-4CBA-946A-51D6774739CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71085C1C-AA5E-4CBA-946A-51D6774739CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
