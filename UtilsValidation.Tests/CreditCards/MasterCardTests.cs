@@ -10,32 +10,35 @@ namespace UtilsValidation.Tests.CreditCards
 
         [Theory]
         [InlineData("5425233430109903")]
+        [InlineData("2222420000001113")]
+        [InlineData("2223000048410010")]
         public void IsValid_MasterCardNumber_ReturnsTrue(object input) 
         {
             //Arrange
-            var validationContext = new ValidationContext(input);
+            var masterCardValidation = new MasterCard();
 
             //Act
-            var masterCardAnotation = new MasterCard();
-            var validationResult = masterCardAnotation.GetValidationResult(input, validationContext);
+            var result = masterCardValidation.IsValid(input);
 
             //Assert
-            Assert.True(Validator.TryValidateObject(input, validationContext, new List<ValidationResult> { validationResult }));
+            Assert.True(result);
         }
 
         [Theory]
         [InlineData("378282246310005")]
+        [InlineData("374245455400126")]
+        [InlineData("6250941006528599")]
+        [InlineData("6011000991300009")]
         public void IsValid_MasterCardNumber_ReturnsFalse(object input)
         {
             //Arrange
-            var validationContext = new ValidationContext(input);
+            var masterCardValidation = new MasterCard();
 
             //Act
-            var masterCardAnotation = new MasterCard();
-            var validationResult = masterCardAnotation.GetValidationResult(input, validationContext);
+            var result = masterCardValidation.IsValid(input);
 
             //Assert
-            Assert.False(Validator.TryValidateObject(input, validationContext, new List<ValidationResult> { validationResult }));
+            Assert.False(result);
         }
     }
 }
