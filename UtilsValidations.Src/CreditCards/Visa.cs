@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Text.RegularExpressions;
+using UtilsValidations.Src.Extensions;
 
 namespace UtilsValidations.Src.CreditCards
 {
@@ -11,7 +12,7 @@ namespace UtilsValidations.Src.CreditCards
 
         public override bool IsValid(object value)
         {
-            return Regex.IsMatch(value.ToString(), @"^4[0-9]{12}(?:[0-9]{3})?$");
+            return Regex.IsMatch(value.ToString().GetNoWhiteSpaceString(), @"^4[0-9]{12}(?:[0-9]{3})?$");
         }
     }
 }
