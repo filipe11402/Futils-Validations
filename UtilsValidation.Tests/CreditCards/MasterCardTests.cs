@@ -7,7 +7,6 @@ namespace UtilsValidation.Tests.CreditCards
 {
     public class MasterCardTests
     {
-
         [Theory]
         [InlineData("5425233430109903")]
         [InlineData("2222420000001113")]
