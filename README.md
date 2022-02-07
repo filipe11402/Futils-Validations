@@ -3,8 +3,20 @@
 Validate your credit card numbers based on their brand using data anotations
 
 ---
-## Example
-### Create the model you want to perform validation
+# How to use
+
+### CLI
+```
+dotnet add package FUtils.CreditCard.Validations
+```
+
+### Nuget
+```
+Install-Package FUtils.CreditCard.Validations
+```
+
+---
+## Validate MasterCard credit card
 ```cs
 public class CreditCardModel
 {
@@ -14,7 +26,7 @@ public class CreditCardModel
     public string CreditCardNumber { get; set; }
 }
 ```
-### Check if the data inserted is valid
+
 ```cs
 public class CreditCardController : Controller
 {
