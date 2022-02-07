@@ -5,7 +5,7 @@ Validate your credit card numbers based on their brand using data anotations
 ---
 # How to use
 
-### CLI
+### .NET CLI
 ```
 dotnet add package FUtils.CreditCard.Validations
 ```
