@@ -1,9 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
+	  
     <PackageId>FUtils.CreditCard.Validations</PackageId>
-    <Version>1.0.0</Version>
+    <Version>2.0.0</Version>
+	  
     <Authors>Filipe Encarnacao</Authors>
+	<PackageTags>.NET;CreditCards</PackageTags>
+	<Description>Helper library to validate your credit cards in a clean way</Description>
+
+	<PackageReleaseNotes>
+		Upgraded package version to dotnet 6.0;
+	</PackageReleaseNotes>
+
+	<Copyright>Copyright © 2022 FUtils</Copyright>
+	<RepositoryUrl>https://github.com/filipe11402/Futils-Validations</RepositoryUrl>
+	  
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 </Project>

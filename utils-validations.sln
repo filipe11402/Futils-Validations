@@ -3,9 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilsValidations.Src", "UtilsValidations.Src\UtilsValidations.Src.csproj", "{08C6817A-F278-4D8B-AB83-CE35468C7D6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilsValidations.Src", "UtilsValidations.Src\UtilsValidations.Src.csproj", "{08C6817A-F278-4D8B-AB83-CE35468C7D6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilsValidation.Tests", "UtilsValidation.Tests\UtilsValidation.Tests.csproj", "{71085C1C-AA5E-4CBA-946A-51D6774739CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilsValidation.Tests", "UtilsValidation.Tests\UtilsValidation.Tests.csproj", "{71085C1C-AA5E-4CBA-946A-51D6774739CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{3BAC1946-161D-4890-BD05-4CBCAD7AAA41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{D9342759-84C0-45AA-BF5C-E80D1191720E}"
+	ProjectSection(SolutionItems) = preProject
+		automatic-tests.yml = automatic-tests.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +31,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D9342759-84C0-45AA-BF5C-E80D1191720E} = {3BAC1946-161D-4890-BD05-4CBCAD7AAA41}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {52F6B197-E4DA-4D0C-8D59-E25EF41EFB84}
